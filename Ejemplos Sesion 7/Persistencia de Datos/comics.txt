@@ -1,0 +1,14 @@
+{
+  "1a266aea-8ef1-48e9-be5a-cfa644f53769": {
+    "titulo": "Capitan America",
+    "autor": "Stan Lee",
+    "issn": "43214321",
+    "cantidad": 230
+  },
+  "ab102f78-bbe9-4510-a29d-41cc38d9eb19": {
+    "titulo": "Capitan America contra el soldado del invierno",
+    "autor": "Stan Lee",
+    "issn": "56785678",
+    "cantidad": 230
+  }
+}
