@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3732c2ba-6d59-4c22-9055-979c4032e00d" name="Changes" comment="Ejemplos de la sesión.&#10; Desarrollando un programa que habilite generar operaciones CRUD sobre un archivo de texto a través de POSTMAN.">
-      <change afterPath="$PROJECT_DIR$/../../DeployPesentacion.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitIgnore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Persistencia de Datos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comics.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Evaluaciones/reboundRobertCorrea/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Evaluaciones/reboundRobertCorrea/Ejemplo 1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Evaluaciones/sesion3-EV/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../sesion2_repaso/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../sesion2_repaso/sesion2/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../sesion3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../sesion4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../sesion6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../sesion6Yargs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/sesion4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fs-async.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../node-fetch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../usuario.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +35,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Rob-Comp/mo6.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Rob-Comp/modulo6&quot;,
     &quot;accountId&quot;: &quot;9782eaf4-8e24-455c-bf25-76c93fc6f356&quot;
   }
 }</component>
@@ -80,8 +53,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "sesion4Clase",
-    "last_opened_file_path": "C:/Users/Usuario/Desktop/Curso Full Stack/Modulo 6",
+    "git-widget-placeholder": "origin",
+    "last_opened_file_path": "C:/Users/Usuario/Desktop/Curso Full Stack/Modulo 4/Compro - Robert Correa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1730944063378</updated>
       <workItem from="1730944064397" duration="4534000" />
-      <workItem from="1730950062915" duration="326000" />
+      <workItem from="1730950062915" duration="1238000" />
+      <workItem from="1730997150214" duration="98000" />
     </task>
     <task id="LOCAL-00001" summary="Ejemplos de la sesión.&#10; Desarrollando un programa que habilite generar operaciones CRUD sobre un archivo de texto a través de POSTMAN.">
       <option name="closed" value="true" />
@@ -118,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730948350720</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ejemplos de la sesión.&#10; Desarrollando un programa que habilite generar operaciones CRUD sobre un archivo de texto a través de POSTMAN.">
+      <option name="closed" value="true" />
+      <created>1730950414850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730950414850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +111,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
