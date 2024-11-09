@@ -13,5 +13,15 @@
     "id": 1730767205904,
     "titulo": "Aprendiendo Express - APIs",
     "completada": false
+  },
+  {
+    "id": 1731107548081,
+    "titulo": "Aprendiendo Persistencias de Datos",
+    "completada": true
+  },
+  {
+    "id": 1731107626265,
+    "titulo": "Trabajando con el DOM",
+    "completada": false
   }
 ]
