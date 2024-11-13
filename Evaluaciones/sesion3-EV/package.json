@@ -1,0 +1,16 @@
+{
+  "name": "sesion3-ev-robertcorrea",
+  "version": "1.0.0",
+  "description": "Evaluacion para la sesion 3 del modulo 6",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon watch index.js"
+  },
+  "author": "ROBERT CORREA",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "lodash": "^4.17.21"
+  }
+}

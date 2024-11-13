@@ -1,10 +1,5 @@
 [
   {
-    "id": 1730244561633,
-    "titulo": "Aprendiendo HTML y CSS",
-    "completada": true
-  },
-  {
     "id": 1730244839393,
     "titulo": "Aprendiendo Node.JS",
     "completada": true
@@ -18,10 +13,5 @@
     "id": 1731107548081,
     "titulo": "Aprendiendo Persistencias de Datos",
     "completada": true
-  },
-  {
-    "id": 1731107626265,
-    "titulo": "Trabajando con el DOM",
-    "completada": false
   }
 ]

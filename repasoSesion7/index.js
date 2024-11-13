@@ -1,5 +1,5 @@
 import http from 'node:http';
-import {obtenerTareas, crearTarea, actualizarTareas} from './tareas.js';
+import {obtenerTareas, crearTarea, actualizarTareas, eliminarTarea} from './tareas.js';
 
 const PORT = 3001;
 // Creando el servidor
@@ -15,6 +15,7 @@ http
         // const {method, url} = req;
         // console.log(method, url);
         const id = Number(req.url.split('/')[2]);
+
         const rutaPut = Number(req.url.split('/'));
         console.log(rutaPut)
         console.log(id)
@@ -43,44 +44,70 @@ http
                     break;
 
                 case 'GET':
-                    if (req.url === '/listar' && req.method == 'GET') {
-                        res.write('Vas a listar las tareas');
-                        const tareas = await obtenerTareas();
-                        if (tareas.length > 0) {
-                            res.end(JSON.stringify(tareas));
-                        } else {
-                            res.end("Mensaje Se completó la operacion, pero la consulta esta vacía")
-                        }
-                    }
+                    // Recibiendo datos por la query string - URL
+                    console.log(req.url);
+                    console.log(req.headers.host)
+
+
+                    const url = new URL(req.url, `http://${req.headers.host}`);
+                    console.log(url);
+                    console.log(url.searchParams);
+
+                    const params = new URLSearchParams(url.searchParams);
+                    console.log(params.get('nombre'));
+
+                    // if (req.url === '/listar' && req.method == 'GET') {
+                    //     res.write('Vas a listar las tareas');
+                    //     const tareas = await obtenerTareas();
+                    //     if (tareas.length > 0) {
+                    //         res.end(JSON.stringify(tareas));
+                    //     } else {
+                    //         res.end("Mensaje Se completó la operación, pero la consulta esta vacía")
+                    //     }
+                    // }
                     break;
+
                 case 'PUT':
+
                     // if (req.url == "/actualizar") {
 
-                        // console.log(typeof (Number(req.url.split('/'))));
-                        if (!isNaN(id)) {
-                            let body = '';
-                            req.on('data', (data) => {
-                                body += data.toString();
-                            })
-                            req.on('end', async () => {
-                                const datosActualizados = JSON.parse(body);
-                                const tareaActualizada = await actualizarTareas(id, datosActualizados.completada)
-                                console.log(datosActualizados)
+                    // console.log(typeof (Number(req.url.split('/'))));
+                    if (!isNaN(id)) {
+                        let body = '';
+                        req.on('data', (data) => {
+                            body += data.toString();
+                        })
+                        req.on('end', async () => {
+                            const datosActualizados = JSON.parse(body);
+                            const tareaActualizada = await actualizarTareas(id, datosActualizados.completada)
+                            console.log(datosActualizados)
 
 
-                                if (tareaActualizada) {
-                                    res.writeHead(200, {'Content-Type': 'application/json'})
-                                    res.end(JSON.stringify(tareaActualizada));
-                                } else {
-                                    res.writeHead(404, {'Content-Type': 'application/json'});
-                                    res.end(JSON.stringify({'mensaje': 'Tarea Actualizada'}));
-                                }
-                            })
+                            if (tareaActualizada) {
+                                res.writeHead(200, {'Content-Type': 'application/json'})
+                                res.end(JSON.stringify(tareaActualizada));
+                            } else {
+                                res.writeHead(404, {'Content-Type': 'application/json'});
+                                res.end(JSON.stringify({'mensaje': 'Tarea Actualizada'}));
+                            }
+                        })
                         // }
                     } else {
                         res.writeHead(404, 'Por favor indique un ID')
                         res.end(JSON.stringify({'mensaje': 'Ruta no encontrada'}));
                     }
+                    break;
+
+                case 'DELETE':
+                    if (!isNaN(id)) {
+                        await eliminarTarea(id);
+                        res.writeHead(204, {'Content-Type': 'application/json'});
+                        red.end('Tarea Eliminada Exitosamente!...');
+                    } else {
+                        res.write(404, {"Content-Type": "text/plain"});
+                        res.end('Tarea no encontrada')
+                    }
+
                     break;
 
                 default:

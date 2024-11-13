@@ -68,3 +68,15 @@ export const actualizarTareas = async (id, terminada) => {
         return null;
     }
 }
+
+//Función para eliminar tarea - por id
+export const eliminarTarea =  async (id)=>{
+    const tareas = await obtenerTareas();
+    const nuevastareas = tareas.filter(tarea => {
+        return tarea.id != Number(id)
+
+    });
+    await guardarTareas(nuevastareas);
+        console.log(`La tarea  ${id} se eliminó de manera satisfactoria!!!`);
+
+}

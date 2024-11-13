@@ -1,0 +1,29 @@
+{
+  "name": "proyecto-nodejs",
+  "version": "1.0.0",
+  "description": "mi primer proyecto en node.js",
+  "main": "index2.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon index2.js",
+    "start": "nodemon index2.js",
+    "robert": "nodemon index2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rob-Comp"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Robert Correa",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "dayjs": "^1.11.13",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
